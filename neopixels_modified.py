@@ -20,7 +20,7 @@ class NeoPixels:
         time.sleep(0.5)
 
     def alternate_colour(self, colour_1, colour_2):
-        for pixel in range(-5, self.pixels_amount //2):
+        for pixel in range(self.pixels_amount //2 * -1, self.pixels_amount //2):
             if pixel % 2 == 0:
                 cp.pixels[pixel] = colour_1
             else:
